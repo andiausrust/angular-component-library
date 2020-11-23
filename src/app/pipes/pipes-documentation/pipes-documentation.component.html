@@ -1,0 +1,34 @@
+<h1>Pipes</h1>
+<hr>
+
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Filter Term'" [subtitle]="'Pipes'">
+    <div body>
+        {{['Hello', 'World', 'Hello World'] | filterTerm : 'Hello' }}
+    </div>
+</app-card>
+
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Flatten'" [subtitle]="'Pipes'">
+    <div body>
+        {{flattenData | flatten}}
+    </div>
+    <div class="footer" footer>
+        <button (click)="modifyFlatten()">Modify</button>
+        <button (click)="reassignFlatten()">Reassign</button>
+    </div>
+</app-card>
+
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Credit Card Formatter'" [subtitle]="'Pipes'">
+    <div body>
+        <p>{{'1111222233334444' | creditCardFormatter}}</p>
+        <p>{{'11112222333344441111111' | creditCardFormatter}}</p>
+        <p>{{'a111222233334444' | creditCardFormatter}}</p>
+    </div>
+</app-card>
+
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Truncate'" [subtitle]="'Pipes'">
+    <p body>{{ 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. ' +
+    'Amet dignissimos ea error et illo, ipsa natus porro quis sint. ' +
+    'Ab accusamus assumenda, doloribus dolorum ea explicabo, magnam molestiae neque odit omnis quibusdam, ' +
+    'rerum sit sunt suscipit velit. Esse explicabo quia quidem tenetur voluptas. Eos inventore praesentium ' +
+    'quam veniam veritatis voluptate!' | truncate: 75 }}</p>
+</app-card>

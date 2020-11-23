@@ -1,0 +1,17 @@
+<app-toolbar [title]="'Angular Component Library'">
+    <ul>
+        <li routerLink="" routerLinkActive="show-pointer">Components</li>
+        <li routerLink="directives" routerLinkActive="show-pointer">Directives</li>
+        <li routerLink="services" routerLinkActive="show-pointer">Services</li>
+        <li routerLink="pipes" routerLinkActive="show-pointer">Pipes</li>
+        <li routerLink="others" routerLinkActive="show-pointer">Others</li>
+    </ul>
+</app-toolbar>
+
+<main>
+
+    <router-outlet></router-outlet>
+    <app-snackbar></app-snackbar>
+
+</main>
+

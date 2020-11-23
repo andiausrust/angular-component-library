@@ -1,0 +1,19 @@
+header {
+    background-size: cover;
+    position: relative;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        background-color: white;
+        color: black;
+        font-size: 5vw;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+        padding: 20px;
+        mix-blend-mode: screen;
+    }
+}

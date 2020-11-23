@@ -1,0 +1,17 @@
+import {Directive, ElementRef, HostListener, Input, Renderer2} from '@angular/core';
+
+@Directive({
+    selector: '[appRipple]'
+})
+export class RippleDirective {
+
+    @Input() appRipple = 'ripple';
+
+    constructor(public element: ElementRef, public renderer: Renderer2) {
+    }
+
+    @HostListener('mouseenter')
+    onHover(): void {
+        this.renderer.addClass(this.element.nativeElement, this.appRipple);
+    }
+}

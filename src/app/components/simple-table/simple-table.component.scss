@@ -1,0 +1,30 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+    thead {
+        text-transform: uppercase;
+        padding: 5px 10px;
+        text-align: left;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+
+        tr th {
+            cursor: pointer;
+        }
+
+    }
+
+    tbody {
+        tr {
+            &:hover {
+                background-color: #eee;
+                transition: all 0.3s;
+            }
+
+            td {
+                border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+                padding-left: 10px;
+            }
+        }
+    }
+}
