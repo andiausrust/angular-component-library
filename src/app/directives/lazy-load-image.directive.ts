@@ -15,6 +15,7 @@ export class LazyLoadImageDirective implements AfterViewInit, OnDestroy {
 
     ngAfterViewInit(): void {
         if (this.canLazyLoad()) {
+            /* https://css-tricks.com/an-explanation-of-how-the-intersection-observer-watches/ */
             this.observer = new IntersectionObserver(entries => {
                 entries.forEach(({isIntersecting}) => {
                     if (isIntersecting) {

@@ -30,6 +30,7 @@ import {BannerCutOutComponent} from './banner-cut-out/banner-cut-out.component';
 import {SimplePopupComponent} from './simple-popup/simple-popup.component';
 import {CountDownTimerComponent} from './count-down-timer/count-down-timer.component';
 import {SharedModule} from '../shared/shared/shared.module';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
     declarations: [
@@ -60,6 +61,7 @@ import {SharedModule} from '../shared/shared/shared.module';
         BannerCutOutComponent,
         SimplePopupComponent,
         CountDownTimerComponent,
+        FooterComponent,
     ],
     imports: [ComponentsRoutingModule, CommonModule, FormsModule, ReactiveFormsModule, SharedModule],
     exports: [ComponentsRoutingModule, CardComponent]
