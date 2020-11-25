@@ -31,6 +31,7 @@ import {SimplePopupComponent} from './simple-popup/simple-popup.component';
 import {CountDownTimerComponent} from './count-down-timer/count-down-timer.component';
 import {SharedModule} from '../shared/shared/shared.module';
 import { FooterComponent } from './footer/footer.component';
+import { SkeletonLoaderComponent } from './skeleton-loader/skeleton-loader.component';
 
 @NgModule({
     declarations: [
@@ -62,9 +63,10 @@ import { FooterComponent } from './footer/footer.component';
         SimplePopupComponent,
         CountDownTimerComponent,
         FooterComponent,
+        SkeletonLoaderComponent,
     ],
     imports: [ComponentsRoutingModule, CommonModule, FormsModule, ReactiveFormsModule, SharedModule],
-    exports: [ComponentsRoutingModule, CardComponent]
+    exports: [ComponentsRoutingModule, CardComponent, TabsComponent]
 })
 export class ComponentsModule {
 }

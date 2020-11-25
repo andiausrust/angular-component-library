@@ -47,6 +47,8 @@ export class ComponentDocumentationComponent implements OnInit {
 
     @ViewChild('snackbar', {}) snackBar: SnackbarComponent;
 
+    public loaded = false;
+
     public snackBarShow(): void {
         this.snackBar.showMessage('Snackbar Example');
     }

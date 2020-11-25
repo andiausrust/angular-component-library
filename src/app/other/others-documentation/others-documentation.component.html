@@ -1,6 +1,13 @@
 <h3>Other  - Guards, Animations & More</h3>
 <hr>
 
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Slide Right'" [subtitle]="'Components'">
+    <app-tabs body [tabs]="tabs" (selectedTabIndex)="selectedTab = $event;">
+        <h1 @slideRightAnimation *ngIf="selectedTab === 0">Tab 1 Example</h1>
+        <h1 @slideRightAnimation *ngIf="selectedTab === 1">Tab 2 Example</h1>
+    </app-tabs>
+</app-card>
+
 <app-card [iconClasses]="'fas fa-info-circle'" [title]="'Form Dirty Guard'" [subtitle]="'Others'">
     <form body class="email-form" [formGroup]="form" (ngSubmit)="submit()">
         <div>
